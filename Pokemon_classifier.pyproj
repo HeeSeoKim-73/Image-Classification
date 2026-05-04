@@ -1,0 +1,324 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>05ff9ec2-531d-48a5-aae9-4e3bdc2789bb</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Pokemon_classifier</Name>
+    <RootNamespace>Pokemon_classifier</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\train.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\dataset.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\model.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\evaluate.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
+    <Folder Include="data\pokemon\" />
+    <Folder Include="data\pokemon\charmander\" />
+    <Folder Include="data\pokemon\wigglytuff\" />
+    <Folder Include="data\pokemon\zubat\" />
+    <Folder Include="data\pokemon\zapdos\" />
+    <Folder Include="data\pokemon\pikachu\" />
+    <Folder Include="results\" />
+    <Folder Include="src\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\pokemon\charmander\00000000.png" />
+    <Content Include="data\pokemon\charmander\00000001.jpg" />
+    <Content Include="data\pokemon\charmander\00000002.jpg" />
+    <Content Include="data\pokemon\charmander\00000003.png" />
+    <Content Include="data\pokemon\charmander\00000004.png" />
+    <Content Include="data\pokemon\charmander\00000005.png" />
+    <Content Include="data\pokemon\charmander\00000006.png" />
+    <Content Include="data\pokemon\charmander\00000008.png" />
+    <Content Include="data\pokemon\charmander\00000010.png" />
+    <Content Include="data\pokemon\charmander\00000012.jpg" />
+    <Content Include="data\pokemon\charmander\00000013.jpg" />
+    <Content Include="data\pokemon\charmander\00000014.jpg" />
+    <Content Include="data\pokemon\charmander\00000015.png" />
+    <Content Include="data\pokemon\charmander\00000016.png" />
+    <Content Include="data\pokemon\charmander\00000020.png" />
+    <Content Include="data\pokemon\charmander\00000021.png" />
+    <Content Include="data\pokemon\charmander\00000022.png" />
+    <Content Include="data\pokemon\charmander\00000023.jpg" />
+    <Content Include="data\pokemon\charmander\00000024.jpg" />
+    <Content Include="data\pokemon\charmander\00000025.png" />
+    <Content Include="data\pokemon\charmander\00000030.png" />
+    <Content Include="data\pokemon\charmander\00000031.png" />
+    <Content Include="data\pokemon\charmander\00000034.jpg" />
+    <Content Include="data\pokemon\charmander\00000035.jpg" />
+    <Content Include="data\pokemon\charmander\00000036.png" />
+    <Content Include="data\pokemon\charmander\00000037.jpg" />
+    <Content Include="data\pokemon\charmander\00000038.png" />
+    <Content Include="data\pokemon\charmander\00000039.jpg" />
+    <Content Include="data\pokemon\charmander\00000040.png" />
+    <Content Include="data\pokemon\charmander\00000041.jpg" />
+    <Content Include="data\pokemon\charmander\00000042.jpg" />
+    <Content Include="data\pokemon\charmander\00000043.jpg" />
+    <Content Include="data\pokemon\charmander\00000044.png" />
+    <Content Include="data\pokemon\charmander\00000045.png" />
+    <Content Include="data\pokemon\charmander\00000046.png" />
+    <Content Include="data\pokemon\charmander\06c6130a9bdc4e95be7428c02688a48c.jpg" />
+    <Content Include="data\pokemon\charmander\0aaf393c1c214369a0f5a8984b34afdb.jpg" />
+    <Content Include="data\pokemon\charmander\0e2fe299821445639dc97b6fdef415be.jpg" />
+    <Content Include="data\pokemon\charmander\0f96623f13b8436d9a441b14038f10e8.jpg" />
+    <Content Include="data\pokemon\charmander\18e9679b5438491aa1d0ed11184ff839.jpg" />
+    <Content Include="data\pokemon\charmander\27bf742d7bef4ab19577a0e37e84afe6.jpg" />
+    <Content Include="data\pokemon\charmander\2ce9f8fdf43b4d41be57e736bf80eb8f.jpg" />
+    <Content Include="data\pokemon\charmander\39b1781513c9499e9deced3022dd2974.jpg" />
+    <Content Include="data\pokemon\charmander\3e83165adc794c52b6fed8804b3d1678.jpg" />
+    <Content Include="data\pokemon\charmander\4e37157e3877445b93b6f1926a426fd3.jpg" />
+    <Content Include="data\pokemon\charmander\5a556cf840c744d9923974b7c41dd842.jpg" />
+    <Content Include="data\pokemon\charmander\6aae1272d0a9464a967749a0eb8ef008.jpg" />
+    <Content Include="data\pokemon\charmander\6d776b7e8fb34b34bef0d3175d023490.jpg" />
+    <Content Include="data\pokemon\charmander\8b27b8fffbdc404ab61febc0bc3f2b53.jpg" />
+    <Content Include="data\pokemon\charmander\8e17cdd8eec54e73ba92e33eccb07718.jpg" />
+    <Content Include="data\pokemon\charmander\8eea853e3e8b407eb018c14187ad2cb6.jpg" />
+    <Content Include="data\pokemon\pikachu\00000000.jpg" />
+    <Content Include="data\pokemon\pikachu\00000001.png" />
+    <Content Include="data\pokemon\pikachu\00000002.png" />
+    <Content Include="data\pokemon\pikachu\00000003.jpg" />
+    <Content Include="data\pokemon\pikachu\00000004.jpg" />
+    <Content Include="data\pokemon\pikachu\00000009.png" />
+    <Content Include="data\pokemon\pikachu\00000010.png" />
+    <Content Include="data\pokemon\pikachu\00000011.png" />
+    <Content Include="data\pokemon\pikachu\00000014.png" />
+    <Content Include="data\pokemon\pikachu\00000015.png" />
+    <Content Include="data\pokemon\pikachu\00000016.jpg" />
+    <Content Include="data\pokemon\pikachu\00000018.jpg" />
+    <Content Include="data\pokemon\pikachu\00000019.jpg" />
+    <Content Include="data\pokemon\pikachu\00000020.png" />
+    <Content Include="data\pokemon\pikachu\00000021.png" />
+    <Content Include="data\pokemon\pikachu\00000023.png" />
+    <Content Include="data\pokemon\pikachu\00000024.png" />
+    <Content Include="data\pokemon\pikachu\00000027.jpg" />
+    <Content Include="data\pokemon\pikachu\00000029.jpg" />
+    <Content Include="data\pokemon\pikachu\00000030.jpg" />
+    <Content Include="data\pokemon\pikachu\00000031.png" />
+    <Content Include="data\pokemon\pikachu\00000034.jpg" />
+    <Content Include="data\pokemon\pikachu\00000035.png" />
+    <Content Include="data\pokemon\pikachu\00000036.png" />
+    <Content Include="data\pokemon\pikachu\00000038.png" />
+    <Content Include="data\pokemon\pikachu\00000040.png" />
+    <Content Include="data\pokemon\pikachu\00000041.jpg" />
+    <Content Include="data\pokemon\pikachu\00000043.png" />
+    <Content Include="data\pokemon\pikachu\00000044.jpg" />
+    <Content Include="data\pokemon\pikachu\00000046.jpg" />
+    <Content Include="data\pokemon\pikachu\00000048.jpg" />
+    <Content Include="data\pokemon\pikachu\00000050.png" />
+    <Content Include="data\pokemon\pikachu\00000052.png" />
+    <Content Include="data\pokemon\pikachu\00000054.jpg" />
+    <Content Include="data\pokemon\pikachu\00000055.png" />
+    <Content Include="data\pokemon\pikachu\00000058.png" />
+    <Content Include="data\pokemon\pikachu\00000059.jpg" />
+    <Content Include="data\pokemon\pikachu\00000061.jpg" />
+    <Content Include="data\pokemon\pikachu\00000064.jpg" />
+    <Content Include="data\pokemon\pikachu\00000066.png" />
+    <Content Include="data\pokemon\pikachu\00000067.png" />
+    <Content Include="data\pokemon\pikachu\00000069.png" />
+    <Content Include="data\pokemon\pikachu\00000072.jpeg" />
+    <Content Include="data\pokemon\pikachu\00000073.jpg" />
+    <Content Include="data\pokemon\pikachu\00000074.png" />
+    <Content Include="data\pokemon\pikachu\00000205.jpeg" />
+    <Content Include="data\pokemon\pikachu\01eca38720a448d69cc409b897b399b4.jpg" />
+    <Content Include="data\pokemon\pikachu\05da808f2caa4bf0a38449d4b172967a.jpg" />
+    <Content Include="data\pokemon\pikachu\0cdf621bbee34f768b89d6a519f52f1c.jpg" />
+    <Content Include="data\pokemon\pikachu\0f95bb7ac9cb4a789515930d1b185c15.jpg" />
+    <Content Include="data\pokemon\pikachu\1b88de58ecef49a8a33bd46dc6791915.jpg" />
+    <Content Include="data\pokemon\pikachu\39a31e1c0aea475aa37ce3c60d1495f5.jpg" />
+    <Content Include="data\pokemon\pikachu\4c021839fc7d424dbcd6be33a6de1738.jpg" />
+    <Content Include="data\pokemon\pikachu\4d6fb844dbc1427ebf9fb849beca2cf3.jpg" />
+    <Content Include="data\pokemon\pikachu\56d49e45fe0246d8a7eeece8b5569f71.jpg" />
+    <Content Include="data\pokemon\pikachu\69f52ce8bd0f42a482a97480764867ce.jpg" />
+    <Content Include="data\pokemon\pikachu\6fafbe812e8c4b9ba16d727cc9b6a127.jpg" />
+    <Content Include="data\pokemon\pikachu\7b7b1c9164064c8981b2f31f2feb873e.jpg" />
+    <Content Include="data\pokemon\pikachu\7fb36ffead6745a3b6b6d8f1aaf7a0cc.jpg" />
+    <Content Include="data\pokemon\pikachu\9a986c5f04f6478c85da7d8b4e79048b.jpg" />
+    <Content Include="data\pokemon\pikachu\9cf323423e1a4862a5474ec358daada1.jpg" />
+    <Content Include="data\pokemon\pikachu\9e315cea4c944136a9b1f30b2018e6dd.jpg" />
+    <Content Include="data\pokemon\wigglytuff\04cc4505179e46b1b5cd8ea8bb0c1c3d.jpg" />
+    <Content Include="data\pokemon\wigglytuff\0dd17503afed478abe1dd0ee6c51f8a0.jpg" />
+    <Content Include="data\pokemon\wigglytuff\113924895bb24ea0b9b8cba6c609601d.jpg" />
+    <Content Include="data\pokemon\wigglytuff\15d41c09e35c487e943f89bea6b7c1d7.jpg" />
+    <Content Include="data\pokemon\wigglytuff\169faa99364f4cdc80840e970401da61.jpg" />
+    <Content Include="data\pokemon\wigglytuff\179fdc0309414eba93632e073b5e38a3.jpg" />
+    <Content Include="data\pokemon\wigglytuff\17cb76f84cf143d7b0932a0cd8d04f76.jpg" />
+    <Content Include="data\pokemon\wigglytuff\1922cd0fb4bb488bbe65bdf9eea8c55e.jpg" />
+    <Content Include="data\pokemon\wigglytuff\22c4971825904425b37a2bf860e29241.jpg" />
+    <Content Include="data\pokemon\wigglytuff\2348108df6594c8c92bc4ade315ce3a7.jpg" />
+    <Content Include="data\pokemon\wigglytuff\23fbee9992a843e4a80771d6d2a6d40c.jpg" />
+    <Content Include="data\pokemon\wigglytuff\2431354d4637452bb01d538fde4cbfcf.jpg" />
+    <Content Include="data\pokemon\wigglytuff\250da8dceed04fdb81c45a5836b2b155.jpg" />
+    <Content Include="data\pokemon\wigglytuff\271aff99df8e4838826731d82a06520c.jpg" />
+    <Content Include="data\pokemon\wigglytuff\2d867dd17b63436780bedcef45b7d5b0.jpg" />
+    <Content Include="data\pokemon\wigglytuff\35e3b43db10843c28084d2e9f7f64e11.jpg" />
+    <Content Include="data\pokemon\wigglytuff\4abbd412be2945ea8ee2a952376096ed.jpg" />
+    <Content Include="data\pokemon\wigglytuff\4f3c72df431a49d4b3fbc84c94f2261e.jpg~c200" />
+    <Content Include="data\pokemon\wigglytuff\5705594c63754365bd5393de04a0d7b4.jpg" />
+    <Content Include="data\pokemon\wigglytuff\59cdccce10c640dbb24ab8e9483e0dc2.jpg" />
+    <Content Include="data\pokemon\wigglytuff\5bbea1401b034618a39266465337d925.jpg" />
+    <Content Include="data\pokemon\wigglytuff\60018e33617544b19cf0f481b6a8d78f.jpg" />
+    <Content Include="data\pokemon\wigglytuff\6b85e9f56e1e470689aff956c0f6e476.jpg" />
+    <Content Include="data\pokemon\wigglytuff\6d19376d85b34ca7a090c967cf23b776.jpg" />
+    <Content Include="data\pokemon\wigglytuff\755f8be66bda4a4486a4e3c92394e2fe.jpg" />
+    <Content Include="data\pokemon\wigglytuff\785ef830460b4b89a7009379601bb117.jpg" />
+    <Content Include="data\pokemon\wigglytuff\82094ad78784486da3a87dd995ae7daf.jpg" />
+    <Content Include="data\pokemon\wigglytuff\8bf1a60deffb4ef9877ff28cea00b97a.jpg" />
+    <Content Include="data\pokemon\wigglytuff\90490b5ac0a8472791898900e39894be.jpg" />
+    <Content Include="data\pokemon\wigglytuff\92dfb6eda9e943cea0d337ef7100af7c.jpg" />
+    <Content Include="data\pokemon\wigglytuff\9429cfcde2cc4aad8fe85327fa4d7d69.jpg" />
+    <Content Include="data\pokemon\wigglytuff\971f921b9d7a4e39b19d90fa9407da8e.jpg" />
+    <Content Include="data\pokemon\wigglytuff\986a54659305426a8bd922079c1f0455.jpg" />
+    <Content Include="data\pokemon\wigglytuff\9b1d8edba7f145e288a2686356747425.jpg" />
+    <Content Include="data\pokemon\wigglytuff\9ba2b3c0b13243dc9c909e7437849c3f.jpg" />
+    <Content Include="data\pokemon\wigglytuff\a10d5c9537c34dbfab7cc512652e68e2.jpg" />
+    <Content Include="data\pokemon\wigglytuff\a7c7ca000d4f448dad932bacd6257800.jpg" />
+    <Content Include="data\pokemon\wigglytuff\aa3bed809da94166b4f1a44a23396575.jpg" />
+    <Content Include="data\pokemon\wigglytuff\ab526b08ac5f4beb9110721989d01110.jpg" />
+    <Content Include="data\pokemon\wigglytuff\ac819ff1ba7241ef9464841367826984.jpg" />
+    <Content Include="data\pokemon\wigglytuff\aea699e346d64c2b9922f55947df73f4.jpg" />
+    <Content Include="data\pokemon\wigglytuff\af052046c8654ae7b050c0708440c693.jpg" />
+    <Content Include="data\pokemon\wigglytuff\b7dd3c3ef237442f919c63ad252f775b.jpg" />
+    <Content Include="data\pokemon\wigglytuff\c3883211eb7b4f45a574357feb92b809.jpg" />
+    <Content Include="data\pokemon\wigglytuff\c7b5cf3ccb9c494bbeb0d09404905ee7.jpg" />
+    <Content Include="data\pokemon\wigglytuff\c7c5bb8237004007a25dd397bfa4863e.jpg" />
+    <Content Include="data\pokemon\wigglytuff\c999f52f73344e7d9cc3f54c476f291f.jpg" />
+    <Content Include="data\pokemon\wigglytuff\d38b59e1014d4838bea6feb71339abbd.jpg" />
+    <Content Include="data\pokemon\wigglytuff\d402515131fd4b299c01e66f92617f74.jpg" />
+    <Content Include="data\pokemon\wigglytuff\dc8d676095e047bd92131a06a1e832bc.jpg" />
+    <Content Include="data\pokemon\wigglytuff\e16174dd747741a19145cb90ed3e1152.jpg" />
+    <Content Include="data\pokemon\wigglytuff\e2198bbb19fa4364ab324fbf27c181c9.jpg" />
+    <Content Include="data\pokemon\wigglytuff\e3190b78e9674423b05fac3d18d240df.jpg" />
+    <Content Include="data\pokemon\wigglytuff\f0b5c63709e64591a7c4886a46757980.jpg" />
+    <Content Include="data\pokemon\wigglytuff\f20cc663cf2e424580f6c0f95126f72e.jpg" />
+    <Content Include="data\pokemon\wigglytuff\f50c8af4437c41419903d63f66cf4a01.jpg" />
+    <Content Include="data\pokemon\wigglytuff\f6e6ddb5d4654fca9af45c6c4ef1125f.jpg" />
+    <Content Include="data\pokemon\zapdos\00e5ca5e91ca4f44be3d3d2383f96779.jpg" />
+    <Content Include="data\pokemon\zapdos\038bdc26e3544737b3d8fc4e2bb61288.jpg" />
+    <Content Include="data\pokemon\zapdos\0ee0bc4f1202451f8fd10a93fae2d609.jpg" />
+    <Content Include="data\pokemon\zapdos\103cea46936b43018c685f8b9f8e1e11.jpg" />
+    <Content Include="data\pokemon\zapdos\11369d69bbcf494aa76e98498138d87c.jpg" />
+    <Content Include="data\pokemon\zapdos\12ec331842424028b98505ccce3da18e.jpg" />
+    <Content Include="data\pokemon\zapdos\1321cc68f4c14b7684eba6a204f96104.jpg" />
+    <Content Include="data\pokemon\zapdos\1d26634c068d43c6a994340a85ec79a6.jpg" />
+    <Content Include="data\pokemon\zapdos\1f8b1e9698ab4b77a447368c3239a895.jpg" />
+    <Content Include="data\pokemon\zapdos\26b19f8809ce496eae2e1b822d54492c.jpg" />
+    <Content Include="data\pokemon\zapdos\28ce55532d76464796c5e5da46c27533.jpg" />
+    <Content Include="data\pokemon\zapdos\2b7870f2174e4a1d9e13bc0bb71fd35b.jpg" />
+    <Content Include="data\pokemon\zapdos\2dab6ef8caee4e7092424b0c0c9e1de3.jpg" />
+    <Content Include="data\pokemon\zapdos\332439c1334c4b75bf6ffcd6d3ff15c2.jpg" />
+    <Content Include="data\pokemon\zapdos\34f5854ee25f415481e5ef1142baf632.jpg" />
+    <Content Include="data\pokemon\zapdos\3cf07887fd1b43ad9612f9d986380c55.jpg" />
+    <Content Include="data\pokemon\zapdos\42bad9448f2749a8946a4abfe7aae252.jpg" />
+    <Content Include="data\pokemon\zapdos\46f34105208f4bf791a7dc0112a42cbb.jpg" />
+    <Content Include="data\pokemon\zapdos\47d069b9d46b4f2880a690acfdd599f6.jpg" />
+    <Content Include="data\pokemon\zapdos\554dab9b2fee468da30464105367722a.jpg" />
+    <Content Include="data\pokemon\zapdos\56c1ee16eee04a9ca35fd433070f0e65.jpg" />
+    <Content Include="data\pokemon\zapdos\570ae721c3554c64ae8c2ebcb58b7772.jpg" />
+    <Content Include="data\pokemon\zapdos\580e6e89333e494db94f2c251bd374ce.jpg" />
+    <Content Include="data\pokemon\zapdos\5a2238c62acb42b38b514d0862e615ea.jpg" />
+    <Content Include="data\pokemon\zapdos\672219c9fb3d42cab8558d5c3e140ddf.jpg" />
+    <Content Include="data\pokemon\zapdos\7260b5b88cdd4e31b2c1521601d05307.jpg" />
+    <Content Include="data\pokemon\zapdos\785d99a028bf48089bde125938879fa4.jpg" />
+    <Content Include="data\pokemon\zapdos\7a63f55b762a4fe7b6cd92f17ea22ebf.jpg" />
+    <Content Include="data\pokemon\zapdos\7b0ddb107fb84c73b63a1fbde58d3345.jpg" />
+    <Content Include="data\pokemon\zapdos\7f66647fa5df42a898240dcffe49e763.jpg" />
+    <Content Include="data\pokemon\zapdos\808d0175c69846e799580358baf2fe92.jpg" />
+    <Content Include="data\pokemon\zapdos\81b99d88582341388e808f18993e24bf.jpg" />
+    <Content Include="data\pokemon\zapdos\86bf9cf35ccf46e485c17f41aef9578e.jpg" />
+    <Content Include="data\pokemon\zapdos\8b37af987ca344dcbe792f568e3ffc65.jpg" />
+    <Content Include="data\pokemon\zapdos\9db8639fcdd34e35914b88de30d1832a.jpg" />
+    <Content Include="data\pokemon\zapdos\b23068f7977f4e33a972c6b886bfa0bb.jpg" />
+    <Content Include="data\pokemon\zapdos\bb7c0535e6854b7a8b7fe7a941bf155f.jpg" />
+    <Content Include="data\pokemon\zapdos\bcd2f07fe54045f09275bd7aa6fd5359.jpg" />
+    <Content Include="data\pokemon\zapdos\c0d9680eeb85459f93205ba568c0bd8f.jpg" />
+    <Content Include="data\pokemon\zapdos\c3f34230c7e24d18845c4d2eaad54801.jpg" />
+    <Content Include="data\pokemon\zapdos\c99b2d19544c4cbbacd7711ade660279.svg" />
+    <Content Include="data\pokemon\zapdos\cc6e21ad8d5c4a98ad86a1393e313496.jpg" />
+    <Content Include="data\pokemon\zapdos\d538056f0935470da42abeaa3c25ff79.jpg" />
+    <Content Include="data\pokemon\zapdos\da3152fba54a4e37957baff36598d8e7.jpg" />
+    <Content Include="data\pokemon\zapdos\db2f5d7108c547ce85080f7c5cdcc999.jpg" />
+    <Content Include="data\pokemon\zapdos\dc08d0d6143e4d62bb9dbf509596094e.jpg" />
+    <Content Include="data\pokemon\zapdos\e014138c8e3c4c5892f1e0e23e2cfbcf.jpg" />
+    <Content Include="data\pokemon\zapdos\e27ea76894f94ca4b63a6e31a50dd4ef.jpg" />
+    <Content Include="data\pokemon\zapdos\eacf764dc0584a8d944ea7efeba5d79d.jpg" />
+    <Content Include="data\pokemon\zapdos\ebdf45114efa46b9a7c1fb8531efa8f1.jpg" />
+    <Content Include="data\pokemon\zapdos\f5a52cd93f924e28a46d7def3265d6b4.jpg" />
+    <Content Include="data\pokemon\zapdos\zapdos.jpg" />
+    <Content Include="data\pokemon\zubat\093d7e43dafb4c78b5603f60b56919af.jpg" />
+    <Content Include="data\pokemon\zubat\0a5caf0755b843deab9272d1c38bef7e.jpg" />
+    <Content Include="data\pokemon\zubat\0d823f78c762492dbcbad8b7157c63cd.jpg" />
+    <Content Include="data\pokemon\zubat\10ad73300d104be29e778438a7784abf.jpg" />
+    <Content Include="data\pokemon\zubat\1ec8e81d53ef4a1ca0bffa047a054445.jpg" />
+    <Content Include="data\pokemon\zubat\2590cd66057e4e8e834fd08cc14609af.jpg" />
+    <Content Include="data\pokemon\zubat\283a53c127a749b29801bb9f760c0eaa.jpg" />
+    <Content Include="data\pokemon\zubat\2ae473a2b86a46269c6ad71d24225bb6.jpg" />
+    <Content Include="data\pokemon\zubat\2b19870678714102a93b335042961068.jpg" />
+    <Content Include="data\pokemon\zubat\2c57f6b914b04b9a80007ccfcc51a56e.jpg" />
+    <Content Include="data\pokemon\zubat\2f2b500ea2e24618aa5fe6f1ada55411.jpg" />
+    <Content Include="data\pokemon\zubat\3a10abadf13f41f48eb3126f013b3dbf.jpg" />
+    <Content Include="data\pokemon\zubat\3e91e56b8ea045a5b2db1b3eea58cfac.jpg" />
+    <Content Include="data\pokemon\zubat\4ad16e1c6fc6400fa7a80c92ae04acf4.jpg" />
+    <Content Include="data\pokemon\zubat\53e33f80d9094a83a438a6bfe631d4e9.jpg" />
+    <Content Include="data\pokemon\zubat\54c014d6fc5748b9ad46cb91a5789c2d.jpg" />
+    <Content Include="data\pokemon\zubat\5e3eec1bfcc04357bbda3db8eff8e905.jpg" />
+    <Content Include="data\pokemon\zubat\677332b8c1a143abb0dc04eeb7404140.jpg" />
+    <Content Include="data\pokemon\zubat\74815b536fe04558b55c7149e7c1b042.jpg" />
+    <Content Include="data\pokemon\zubat\78bf5e565dad458dbc9926e1eec1efe6.jpg" />
+    <Content Include="data\pokemon\zubat\81539bf9b1f0494aa4dc81100cdbadac.jpg" />
+    <Content Include="data\pokemon\zubat\886fbe6d2b3b4325a65bae98ebe1e8d1.jpg" />
+    <Content Include="data\pokemon\zubat\8c54cca22d4f4ad0a30c385fe92aede3.jpg" />
+    <Content Include="data\pokemon\zubat\92c50b0cd30346dabd26645ce9e6e849.jpg" />
+    <Content Include="data\pokemon\zubat\9949a698ef6641f9ab8a99c8a3c174e1.jpg" />
+    <Content Include="data\pokemon\zubat\99594e816a474473b3e423c325ae7ff4.jpg" />
+    <Content Include="data\pokemon\zubat\9dfb69b6461e41bb91d0161e2a3ba0f4.jpg" />
+    <Content Include="data\pokemon\zubat\a610f2ab77e94b07aad53534149c678d.jpg" />
+    <Content Include="data\pokemon\zubat\a6796309116642c88034b2122d03d192.jpg" />
+    <Content Include="data\pokemon\zubat\beb5b3b2451c4b9bb05910914d49d912.jpg" />
+    <Content Include="data\pokemon\zubat\c0067eaa66604af2a1d92b182effdeab.jpg" />
+    <Content Include="data\pokemon\zubat\ccdf76de7ec2410ba16e726bd966ea44.jpg" />
+    <Content Include="data\pokemon\zubat\d263b0779c7741e887811dfebe4fc1b4.jpg" />
+    <Content Include="data\pokemon\zubat\d609dfef05a143f0af69d03db887c810.jpg" />
+    <Content Include="data\pokemon\zubat\dc625449bc724219999226fcb5dc9b09.jpg" />
+    <Content Include="data\pokemon\zubat\dd387067380e4d1f8672c30d4b567fac.jpg" />
+    <Content Include="data\pokemon\zubat\e1997a18e61641a4b0e701f6bc4c70f4.jpg" />
+    <Content Include="data\pokemon\zubat\e6cba9a117d64d849fcc389e04e92e11.jpg" />
+    <Content Include="data\pokemon\zubat\f8788465c10a4ab8bb0aeb992ec060ce.jpg" />
+    <Content Include="data\pokemon\zubat\fccfe4de71a543349378b09d91d3f745.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
