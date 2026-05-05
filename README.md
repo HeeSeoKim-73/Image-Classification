@@ -4,6 +4,9 @@
 포켓몬 이미지를 입력받고, 해당 포켓몬의 이름을 분류하는 모델을 구현하였다.
 2개의 모델(ResNet18, MobileNetV3)로 4개의 실험을 설정하여 성능을 비교하였다.
 
+포켓몬 데이터는 아래 주소에서 다운받아 사용하였다.
+https://www.kaggle.com/datasets/lantian773030/pokemonclassification
+
 ## 실험 종류 ##
 - resnet18_freeze
 - resnet18_finetune
