@@ -16,14 +16,14 @@
 
 ## Learning Curve ##
 ### ResNet18_Freeze ###
-![resnet18_freeze_acc](resnet18_freeze_acc.png)
-![resnet18_freeze_loss](resnet18_freeze_loss.png)
+![resnet18_freeze_acc](result/resnet18_freeze_acc.png)
+![resnet18_freeze_loss](result/resnet18_freeze_loss.png)
 ### ResNet18_Finetune ###
-![resnet18_finetune_acc](resnet18_finetune_acc.png)
-![resnet18_finetune_loss](resnet18_finetune_loss.png)
+![resnet18_finetune_acc](result/resnet18_finetune_acc.png)
+![resnet18_finetune_loss](result/resnet18_finetune_loss.png)
 ### MobileNet_Freeze ###
-![mobilenet_freeze_acc](mobilenet_freeze_acc.png)
-![mobilenet_freeze_loss](mobilenet_freeze_loss.png)
+![mobilenet_freeze_acc](result/mobilenet_freeze_acc.png)
+![mobilenet_freeze_loss](result/mobilenet_freeze_loss.png)
 ### MobileNet_Finetune ###
-![mobilenet_finetune_acc](mobilenet_finetune_acc.png)
-![mobilenet_finetune_loss](mobilenet_finetune_loss.png)
+![mobilenet_finetune_acc](result/mobilenet_finetune_acc.png)
+![mobilenet_finetune_loss](result/mobilenet_finetune_loss.png)
