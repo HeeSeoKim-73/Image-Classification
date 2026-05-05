@@ -29,4 +29,4 @@
 ![mobilenet_finetune_loss](results/mobilenet_finetune_loss.png)
 
 ## Streamlit을 이용한 데모 GUI ##
-[작동영상](작동영상.mp4)
+![작동영상](작동영상.gif)
