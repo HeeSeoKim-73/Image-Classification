@@ -16,8 +16,7 @@
 
 ## Learning Curve ##
 ### ResNet18_Freeze ###
-![resnet18_freeze_acc](results/resnet18_freeze_acc.png)
-![resnet18_freeze_loss](results/resnet18_freeze_loss.png)
+![resnet18_freeze_acc](results/resnet18_freeze_acc.png) ![resnet18_freeze_loss](results/resnet18_freeze_loss.png)
 ### ResNet18_Finetune ###
 ![resnet18_finetune_acc](results/resnet18_finetune_acc.png)
 ![resnet18_finetune_loss](results/resnet18_finetune_loss.png)
