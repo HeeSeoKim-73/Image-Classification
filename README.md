@@ -27,3 +27,6 @@
 ### MobileNet_Finetune ###
 ![mobilenet_finetune_acc](results/mobilenet_finetune_acc.png)
 ![mobilenet_finetune_loss](results/mobilenet_finetune_loss.png)
+
+## Streamlit을 이용한 데모 GUI ##
+![작동영상](작동영상.mp4)
